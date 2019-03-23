@@ -6,4 +6,9 @@ object sumFunctionsOrdinary {
   def sumInts(a: Int, b: Int): Int =
   	if (a > b) 0
   	else a + sumInts( a + 1, b)               //> sumInts: (a: Int, b: Int)Int
+  	
+  def sumCubes(a: Int, b: Int): Int =
+  	if (a > b) 0
+  	else a * a * a + sumCubes(a - 1, b)       //> sumCubes: (a: Int, b: Int)Int
+  	
 }
